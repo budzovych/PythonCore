@@ -1,0 +1,10 @@
+#Написати скрипт, який з двох введених чисел визначить, яке з них більше, а яке менше
+
+a = int(input("Number a: "))
+b = int(input("Number b: "))
+if a > b:
+    print ("Number a is bigger than b")
+elif a == b:
+        print("Numbers are equal")
+else:
+            print("Number b is bigger than a")

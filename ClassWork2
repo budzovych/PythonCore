@@ -1,0 +1,9 @@
+#Вивести числа Фібоначі включно до введеного числа n, використовуючи цикли
+
+n = int(input("n="))
+fibonacci_numbers = []
+a,b = 0,1
+while b < n:
+    fibonacci_numbers.append(b)
+    a,b = b, a + b
+print (fibonacci_numbers)

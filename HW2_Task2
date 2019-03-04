@@ -1,0 +1,23 @@
+#Задано чотирицифрове натуральне число. 
+#Знайти добуток цифр цього числа.
+
+a = 5438
+List = list(str(a))
+print(List)
+result = 1
+for i in List:
+    result = result * int(i)
+print(result)
+
+#Записати число в реверсному порядку.
+
+List.reverse()
+print('Reversed List:', List)
+result1 = int("".join([str(i) for i in List]))
+print(result1)
+
+#Посортувати цифри, що входять в дане число
+List.sort()
+print('Sorted List:', List)
+result2 = int("".join([str(i) for i in List]))
+print(result2)

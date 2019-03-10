@@ -1,6 +1,50 @@
-#Вивести числа Фібоначі включно до введеного числа n, використовуючи цикли
+#1.Роздрукувати всі парні числа менші 100 (написати два варіанти коду: один використовуючи цикл while, а інший з використанням циклу for).
+for i in list(range(0,100,2)):
+    print(i)
 
-n = int(input("n="))
+start = 0
+finish = 100
+while start < finish:
+    print (start)
+    start += 2
+    
+    
+#2.Роздрукувати всі непарні числа менші 100. (написати два варіанти коду: один використовуючи оператор continue, а інший без цього оператора).
+for i in list(range(0,100,1)):
+     if i%2 == 0:
+         continue
+     print(i)
+     
+for i in range (100):
+   if i%2 != 0:
+       print(i)
+       
+       
+#3.Перевірити чи список містить непарні числа.
+spisok = [1, 4, 2, 6, 8]
+contain_odd = False
+for item in spisok:
+    if not item % 2 == 0:
+         contain_odd = True
+         break
+if contain_odd:
+    print ("The list contains odd number")
+else:
+    print("The list contains only even number")
+
+
+#4.Створити список, який містить елементи цілочисельного типу, потім за допомогою циклу перебору змінити тип даних елементів на числа з плаваючою крапкою. 
+spisok = [1, 4, 2, 7, 8]
+i = 0
+for element in spisok:
+    spisok[i] = float(element)
+    i += 1
+print (spisok)
+
+
+#5.Вивести числа Фібоначі включно до введеного числа n, використовуючи цикли
+
+n = int(input("n="))Створити список, який містить елементи цілочисельного типу, потім за допомогою циклу перебору змінити тип даних елементів на числа з плаваючою крапкою. 
 fibonacci_numbers = []
 a,b = 0,1
 while b < n:

@@ -1,0 +1,7 @@
+#Given a string, you have to return a string in which each character (case-sensitive) is repeated once.
+
+def double_char(s):
+    st = list(s)
+    st = [str(i*2) for i in st] 
+    st = str("".join(st)) 
+    return (st)

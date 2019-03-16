@@ -1,0 +1,13 @@
+#Return an array, where the first element is the count of positives numbers and the second element is sum of negative numbers.
+
+def count_positives_sum_negatives(arr):
+    if len(arr) == 0:
+        return []
+    a=0
+    b=0
+    for i in arr:
+        if i > 0:
+            a += 1
+        else:
+            b = b + i
+    return [a, b]

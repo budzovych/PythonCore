@@ -1,0 +1,30 @@
+Створити батьківський клас Figure з методами init: ініціалізується колір
+get_color: повертає колір фігури, info: надає інформацію про фігуру та колір,  
+від якого наслідуються такі класи як Rectangle, Square, які мають інформацію про ширину, висоту фігури, метод square, який знаходить площу фігури.
+
+class Figure:
+    def __init__(self, figure, color = "white"):
+        self.color = color
+        self.figure = figure
+    def get_color(self):
+        print ("The figure's color is ", self.color)
+    def info(self):
+        print ("The figure is ", self.figure)
+        print ("The figure's color is", self.color)
+
+class Rectangle(Figure):
+    def __init__(self):
+        Figure.__init__(self, figure='rectangle' )  
+    def square(self):
+        a = int(input("Enter a: "))
+        b = int(input("Enter b: "))
+        s = a*b
+        print('The square of the',self.figure, 'is %0.2f' %s)
+
+class Square(Figure):
+    def __init__(self):
+        Figure.__init__(self, figure='square' )  
+    def square(self):
+        a = int(input("Enter a: "))
+        s = a**2
+        print('The square of the',self.figure, 'is %0.2f' %s)
